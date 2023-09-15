@@ -9,7 +9,6 @@ let publisher = redis.createClient({
 });
 
 publisher.on("error", err => console.log("Redis Error"));
-
 publisher.on("connect", err => console.log("Redis Connected"));
 
 const connect = async () => {
